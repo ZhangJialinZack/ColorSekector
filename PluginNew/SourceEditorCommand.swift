@@ -35,6 +35,7 @@ func colorWithHexString(hex: String) -> (red:Float, green: Float, blue: Float) {
 func literalColorWithHexString(hex: String) -> String {
     let rjb = colorWithHexString(hex: hex)
     let resultStr = "#colorLiteral(red: \(rjb.red), green: \(rjb.green), blue: \(rjb.blue), alpha: 1.0)"
+    
     //  #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0
     return resultStr
 }
@@ -97,5 +98,4 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
         
         completionHandler(nil)
     }
-    
 }

@@ -18,7 +18,6 @@ class SourceEditorExtension: NSObject, XCSourceEditorExtension {
         colorArray = NSArray(contentsOfFile: filePath!)!
     }
     
-    
     var commandDefinitions: [[XCSourceEditorCommandDefinitionKey: Any]] {
         var resArray: [[XCSourceEditorCommandDefinitionKey: String]] = []
         for colorDict in colorArray{
